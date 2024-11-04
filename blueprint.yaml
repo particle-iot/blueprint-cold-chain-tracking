@@ -1,0 +1,22 @@
+id: particle/blueprint-cold-chain-tracking
+category: solution
+icon: particle.png
+gitrepo: https://github.com/particle-iot/blueprint-cold-chain-tracking
+name: blueprint-cold-chain-tracking
+shortDescription: Create a system for monitoring temperature of assets using tags that advertise their temperature using Bluetooth Low Energy (BLE).
+version: 1.0.0
+models: []
+language:
+  - C++
+cloudServices: []
+integrations: []
+hardwareDependencies:
+  - name: Tracker One
+    link: https://www.particle.io/tracker-one/
+  - name: Particle T-SoM Module
+    link: https://www.particle.io/tracker-som/
+description: |
+  Monitor sensors and publish temperature data to the Particle cloud using
+  - BLE temperature sensors
+  - Particle Gen 3 or Gen 4 devices including the Tracker One
+  - Storing data in Google firebase (optional)
