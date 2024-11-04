@@ -13,8 +13,10 @@ integrations: []
 hardwareDependencies:
   - name: Tracker One
     link: https://www.particle.io/tracker-one/
+    tags: [ "Tracker One" ]
   - name: Particle T-SoM Module
     link: https://www.particle.io/tracker-som/
+    tags: [ "T-SoM" ]
 description: |
   Monitor sensors and publish temperature data to the Particle cloud using
   - BLE temperature sensors
