@@ -2,13 +2,13 @@ id: particle/blueprint-cold-chain-tracking
 category: solution
 icon: particle.png
 gitrepo: https://github.com/particle-iot/blueprint-cold-chain-tracking
-name: blueprint-cold-chain-tracking
-shortDescription: Create a system for monitoring temperature of assets using tags that advertise their temperature using Bluetooth Low Energy (BLE).
+name: "Cold chain tracking"
+shortDescription: Create a system for monitoring asset temperature using Bluetooth Low Energy (BLE) tags and Particle devices
 version: 1.0.0
 models: []
 language:
   - C++
-cloudServices: []
+cloudServices: ["Integrations"]
 integrations: []
 hardwareDependencies:
   - name: Tracker One
@@ -18,7 +18,8 @@ hardwareDependencies:
     link: https://www.particle.io/tracker-som/
     tags: [ "T-SoM" ]
 description: |
-  Monitor sensors and publish temperature data to the Particle cloud using
-  - BLE temperature sensors
-  - Particle Gen 3 or Gen 4 devices including the Tracker One
-  - Storing data in Google firebase (optional)
+  This blueprint demonstrates how to monitor asset temperatures in real-time using Bluetooth Low Energy (BLE) tags that advertise temperature readings. The system uses Particle devices, such as the Tracker One or T-SoM Module, to scan and publish temperature data to the Particle cloud. Data can then be forwarded to Google Cloud Pub/Sub and stored in Firebase, enabling cloud-based monitoring and alerting.
+
+  Asset tags like the Kontakt.io S18-3 are used to broadcast temperature data, which is captured by Particle devices at regular intervals. The blueprint includes code for setting up the BeaconScanner library to collect and publish this data to the Particle cloud for further processing.
+
+  This solution is suitable for applications requiring cold chain monitoring, such as logistics, healthcare, and food storage, allowing for easy integration with Google Cloud for data storage and alerting on temperature thresholds.
