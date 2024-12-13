@@ -1,25 +1,33 @@
 id: particle/blueprint-cold-chain-tracking
-category: solution
-icon: particle.png
+slug: particle-blueprint-cold-chain-tracking
+type: solution
+category: "Sensors and data collection"
+expertiseLevel: ""
+tags: ["tracking"]
+icon: assets/particle-logo.svg
 gitrepo: https://github.com/particle-iot/blueprint-cold-chain-tracking
 name: "Cold chain tracking"
 shortDescription: Create a system for monitoring asset temperature using Bluetooth Low Energy (BLE) tags and Particle devices
 version: 1.0.0
 models: []
-language:
-  - C++
-cloudServices: ["Integrations"]
+language: ["C++"]
+cloudServices:
+  - name: Integrations
 integrations: []
-hardwareDependencies:
+supportedDevices:
   - name: Tracker One
     link: https://www.particle.io/tracker-one/
-    tags: [ "Tracker One" ]
-  - name: Particle T-SoM Module
+  - name: T-SoM
     link: https://www.particle.io/tracker-som/
-    tags: [ "T-SoM" ]
+hardwareDependencies:
+  - name: Supported Device
+introduction: |
+  This blueprint shows how you can create a system for monitoring temperature of assets using tags that advertise their temperature using Bluetooth Low Energy (BLE).
 description: |
   This blueprint demonstrates how to monitor asset temperatures in real-time using Bluetooth Low Energy (BLE) tags that advertise temperature readings. The system uses Particle devices, such as the Tracker One or T-SoM Module, to scan and publish temperature data to the Particle cloud. Data can then be forwarded to Google Cloud Pub/Sub and stored in Firebase, enabling cloud-based monitoring and alerting.
 
   Asset tags like the Kontakt.io S18-3 are used to broadcast temperature data, which is captured by Particle devices at regular intervals. The blueprint includes code for setting up the BeaconScanner library to collect and publish this data to the Particle cloud for further processing.
 
   This solution is suitable for applications requiring cold chain monitoring, such as logistics, healthcare, and food storage, allowing for easy integration with Google Cloud for data storage and alerting on temperature thresholds.
+
+additionalResources:
