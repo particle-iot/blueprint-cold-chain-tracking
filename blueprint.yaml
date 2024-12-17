@@ -1,9 +1,8 @@
-id: particle/blueprint-cold-chain-tracking
 slug: particle-blueprint-cold-chain-tracking
 type: solution
 category: "Sensors and data collection"
-expertiseLevel: ""
-tags: ["tracking"]
+expertiseLevel: "expert"
+tags: ["tracking", "sensors", "BLE", "beacon", "alerting"]
 icon: assets/particle-logo.svg
 gitrepo: https://github.com/particle-iot/blueprint-cold-chain-tracking
 name: "Cold chain tracking"
