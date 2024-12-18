@@ -1,9 +1,9 @@
 slug: particle-blueprint-cold-chain-tracking
-type: solution
+type: Solution
 category: "Sensors and data collection"
-expertiseLevel: "expert"
-tags: ["tracking", "sensors", "BLE", "beacon", "alerting"]
-icon: assets/particle-logo.svg
+expertiseLevel: "Expert"
+tags: ["Tracking", "Sensors", "BLE", "Beacon", "Alerting"]
+icon: assets/cold-chain-tracking.svg
 gitrepo: https://github.com/particle-iot/blueprint-cold-chain-tracking
 name: "Cold chain tracking"
 shortDescription: Create a system for monitoring asset temperature using Bluetooth Low Energy (BLE) tags and Particle devices
