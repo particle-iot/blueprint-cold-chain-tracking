@@ -20,6 +20,7 @@ supportedDevices:
     link: https://www.particle.io/tracker-som/
 hardwareDependencies:
   - name: Supported Device
+  - name: BLE asset tag with temperature sensor
 introduction: |
   This blueprint shows how you can create a system for monitoring temperature of assets using tags that advertise their temperature using Bluetooth Low Energy (BLE).
 description: |
